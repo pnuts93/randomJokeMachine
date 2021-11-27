@@ -1,0 +1,56 @@
+body {
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+#joke {
+  border: 2px solid white;
+  border-radius: 10px;
+  flex-basis: 80%;
+  display: grid;
+  grid-template:
+    "text text text"
+    "title title title"
+    "tweet button empty";
+}
+
+#text {
+  padding: 10px;
+  grid-area: text;
+}
+
+#author {
+  text-align: right;
+  padding-right: 10%;
+  color: #AAAAAA;
+  font-style: italic;
+  grid-area: title;
+}
+
+#tweet-quote {
+  grid-area: tweet;
+  margin: 20px 0 20px 20px;
+}
+
+#new-quote {
+  padding: 10px 0 10px 0;
+  grid-area: button;
+  margin: 20px;
+}
+
+#empty {
+  grid-area: empty;
+  margin: 20px;
+}
+
+#img-header {
+  width: 40px;
+}
+
+#header {
+  width: 100%;
+  text-align: center;
+}
